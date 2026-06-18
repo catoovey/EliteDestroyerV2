@@ -1,0 +1,44 @@
+[
+  {
+    "from": "https://(.*)",
+    "to": "http://127.0.0.1:18181/block?message=Sorry,%20you%20are%20not%20allowed%20to%20access%20https://$1",
+    "enabled": false,
+    "mode": "regex",
+    "testUrl": "https://www.reddit.com/r/cats"
+  },
+  {
+    "from": "chrome://(.*)",
+    "to": "http://127.0.0.1:18181/block?message=Sorry,%20you%20are%20not%20allowed%20to%20access%20Chrome://$1",
+    "enabled": false,
+    "mode": "regex",
+    "testUrl": "Chrome://Settings"
+  },
+  {
+    "from": "chrome-extension://",
+    "to": "http://127.0.0.1:18181/block?message=Sorry,%20you%20are%20not%20allowed%20to%20access%20chrome-extension://$1",
+    "enabled": false,
+    "mode": "regex",
+    "testUrl": "chrome-extension://bhbmlcmnjikmaodcicpabbhbiagclech/options.html"
+  },
+  {
+    "from": "about:(.*)",
+    "to": "http://127.0.0.1:18181/block?message=Sorry,%20you%20are%20not%20allowed%20to%20access%20about:$1",
+    "enabled": false,
+    "mode": "regex",
+    "testUrl": "about:blank"
+  },
+  {
+    "from": "file://(.*)",
+    "to": "http://127.0.0.1:18181/block?message=Sorry,%20you%20are%20not%20allowed%20to%20access%20file://$1",
+    "enabled": false,
+    "mode": "regex",
+    "testUrl": "https://www.reddit.com/r/cats"
+  },
+  {
+    "from": "http://(.*)",
+    "to": "http://127.0.0.1:18181/block?message=Sorry,%20you%20are%20not%20allowed%20to%20access%20http://$1",
+    "enabled": false,
+    "mode": "regex",
+    "testUrl": "https://www.reddit.com/r/cats"
+  }
+]
